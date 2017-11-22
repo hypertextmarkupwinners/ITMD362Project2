@@ -6,7 +6,8 @@ form {
 input[type=text] {
     width: 200px;
     padding: 12px 20px;
-    margin: 8px 0;
+	margin-left: auto;
+	margin-right: auto;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -26,10 +27,18 @@ button {
     background-color: red;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+	margin-left: auto;
+	margin-right: auto;
     border: none;
     cursor: pointer;
     width: 200px;
+
+}
+[type="submit"]{
+	margin-left: center;
+	margin-right: auto;
+	width: inherit;
+	margin-top: 12%;
 }
 
 button:hover {
@@ -60,7 +69,9 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
- {
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
     span.psw {
        display: block;
        float: none;
@@ -68,21 +79,20 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
- }
-form {
-    display: inline-block;
-    }
-@media screen and (min-width: 480px) {
-  label {
-    display: inline-block;
-    color: black;
-    background-color: white;
-    margin-right: 5px;
-    font-size: 1.3em;
-  }
-  div {
-    display: block;
-  }
-
 }
+form {
 
+    display: inline-block;
+    text-align: center;
+}
+    }
+button {
+	display: inline-block;
+    text-align: center;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+	}
+	
