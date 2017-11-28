@@ -1,59 +1,6 @@
-#headimg {
-  margin: auto;
-    padding-left: 8%;
-    
-}
-
-input {
-    margin-bottom: 15px;
-}
-
-div {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
 
 
 
-button {
-   vertical-align: baseline;
-    align-content: center;
-}
-
-fieldset {
-    display: inline-block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
-    background-color: whitesmoke;
-    border-radius: 3px;
-    border: solid 1px red;
-    }
-
-label {
-  display: inline-block;
-  color: gray;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  font-size: 100%;
-  margin-bottom: 30px;
-  
-}
-
-
-
-form {
-    border: 3px solid #f1f1f1;
-}
 
 input[type=text] {
     width: 200px;
@@ -95,7 +42,7 @@ button {
 	margin-left: center;
 	margin-right: auto;
 	width: inherit;
-	margin-top: 12%;
+	margin-top: 4%;
 	font-family: 'Oswald', sans-serif;
 	border-radius: 6px;
 }
@@ -119,7 +66,6 @@ button:hover {
 
 img.avatar {
     width: 40%;
-
 }
 
 .container {
@@ -143,8 +89,10 @@ span.psw {
        width: 100%;
     }
 }
+.remember {
+    margin-top: 3%;
+}
 form {
-
     display: inline-block;
     text-align: center;
 	font-family: 'Oswald', sans-serif;
@@ -155,9 +103,5 @@ button {
     text-align: center;
 	font-family: 'Oswald', sans-serif;
 }
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-	}
+
 	
