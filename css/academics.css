@@ -1,9 +1,7 @@
 #headimg {
   margin: auto;
-    padding-left: 8%;
-    
+    padding-left: 8%;   
 }
-
 
 input {
     margin-bottom: 15px;
@@ -13,6 +11,10 @@ input {
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
+}
+
+#accontainer {
+ background-color: aliceblue;   
 }
 
 /* CSS for topnavbar and dropdowns*/
@@ -36,16 +38,17 @@ li {
     overflow: hidden;
     background-color: gray;
     font-family: Arial;
-     border-bottom: 2px solid black;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
     
 }
 
 .topnavbar a {
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     text-align: center;
-    width: 10%;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -56,7 +59,7 @@ li {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;    
+    font-size: 14px;    
     border: none;
     outline: none;
     color: white;
@@ -66,6 +69,7 @@ li {
 
 .topnavbar a:hover, .dropdown:hover .dropbtn {
     background-color:red;
+    transition-duration: 0.2s;
 }
 
 .dropdown-content {
@@ -88,14 +92,11 @@ li {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.active {
- border-bottom-color: solid 1px red;   
 }
 
 button {
@@ -124,43 +125,17 @@ label {
   
 }
 
-
-input[type=text] {
-    width: 200px;
-    padding: 12px 20px;
-	margin-left: auto;
-	margin-right: auto;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
-	border-radius: 6px;
+footer {
+   position:fixed;
+   opacity: 0.8;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+   font-family: 'Roboto', sans-serif;
 }
-
-button {
-    background-color: red;
-    color: white;
-    padding: 14px 20px;
-	margin-left: auto;
-	margin-right: auto;
-    border: none;
-    cursor: pointer;
-    width: 200px;
-	font-family: 'Oswald', sans-serif;
-
-}
-[type="submit"]{
-	margin-left: center;
-	margin-right: auto;
-	width: inherit;
-	margin-top: 12%;
-	font-family: 'Oswald', sans-serif;
-	border-radius: 6px;
-}
-
-button:hover {
-    opacity: 0.8;
-}
+    
 
 .imgcontainer {
     text-align: center;
@@ -174,14 +149,7 @@ button:hover {
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-	   font-family: 'Oswald', sans-serif;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+    
 }
 form {
 
