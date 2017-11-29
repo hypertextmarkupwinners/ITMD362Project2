@@ -44,7 +44,7 @@ a {
     text-decoration: none;
     color: white;
 }
-[type="submit"]{
+.submit{
 	margin-left: center;
 	margin-right: auto;
 	width: inherit;
