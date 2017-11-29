@@ -125,6 +125,14 @@ label {
   
 }
 
+.register {
+ margin-top:2%;
+ margin-right: auto;
+ margin-left: auto;
+    vertical-align: baseline;
+
+}
+
 footer {
    position:fixed;
    opacity: 0.8;
