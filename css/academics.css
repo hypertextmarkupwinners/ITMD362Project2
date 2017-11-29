@@ -36,7 +36,7 @@ li {
 }
 .topnavbar {
     overflow: hidden;
-    background-color: gray;
+    background-color: darkgray;
     font-family: Arial;
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -126,11 +126,9 @@ label {
 }
 
 .register {
- margin-top:2%;
- margin-right: auto;
- margin-left: auto;
-    vertical-align: baseline;
-
+position:relative;
+    top: 25%;
+    left: 45%;
 }
 
 footer {
