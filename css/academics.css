@@ -15,13 +15,14 @@ input {
     margin: 24px 0 12px 0;
 }
 
+/* CSS for topnavbar and dropdowns*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    border-radius: 4px;
+  
     position: fixed;
  
 }
@@ -31,24 +32,66 @@ li {
     max-height: 100%;
     
 }
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 18px 16px;
-    text-decoration: none;
-    border-right: 2px solid gray;
+.topnavbar {
+    overflow: hidden;
+    background-color: gray;
+    font-family: Arial;
+     border-bottom: 2px solid black;
     
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: white;
-    color: red;
-    border-bottom: 1px solid red;
-    transition-duration: 0.1s;
-    
+.topnavbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    width: 10%;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.topnavbar a:hover, .dropdown:hover .dropbtn {
+    background-color:red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .active {
@@ -82,11 +125,6 @@ label {
 }
 
 
-
-form {
-    border: 3px solid #f1f1f1;
-}
-
 input[type=text] {
     width: 200px;
     padding: 12px 20px;
@@ -98,18 +136,6 @@ input[type=text] {
 	font-family: 'Oswald', sans-serif;
 	border-radius: 6px;
 }
-input[type=password]{
-    width: 200px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
-	border-radius: 6px;
-}
-
-
 
 button {
     background-color: red;
@@ -136,33 +162,15 @@ button:hover {
     opacity: 0.8;
 }
 
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-	font-family: 'Oswald', sans-serif;
-	border-radius: 6px;
-}
-
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 40%;
-
 }
 
 .container {
     padding: 16px;
 }
 
-span.psw {
-    float: right;
-    padding-top: 16px;
-	font-family: 'Oswald', sans-serif;
-}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
