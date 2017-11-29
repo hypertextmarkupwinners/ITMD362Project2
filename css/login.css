@@ -40,10 +40,6 @@ button {
 
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 [type="submit"]{
 	margin-left: center;
 	margin-right: auto;
