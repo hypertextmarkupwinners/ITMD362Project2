@@ -16,7 +16,15 @@ input {
 #accontainer {
  background-color: aliceblue;   
 }
-
+h1 {
+   position:relative;
+    text-align: center;
+    margin-top: 25%;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    
+}
 /* CSS for topnavbar and dropdowns*/
 ul {
     list-style-type: none;
@@ -38,10 +46,8 @@ li {
     overflow: hidden;
     background-color: darkgray;
     font-family: Arial;
-
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
 }
 
 .topnavbar a {
@@ -125,10 +131,14 @@ label {
   
 }
 
+#semselect {
+    
+}
+
 .register {
-position:relative;
-    top: 25%;
-    left: 45%;
+ margin: auto;
+    width: 100%;
+    padding: 10px;
 }
 
 footer {
@@ -152,6 +162,19 @@ footer {
     padding: 16px;
 }
 
+.classes {
+    background-color: lightcoral;
+    color: black;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    
+}
+
+th {
+    border-right: 2px solid gray;
+    width: 2%;
+}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
