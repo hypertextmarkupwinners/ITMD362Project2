@@ -2,31 +2,30 @@
 <html>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
 <meta charset="utf-8" />
-<link rel="stylesheet" media="screen" href="login.css" />
+<link rel="stylesheet" media="screen" href="css/login.css" />
 
 
 <body>
 
 
-<form action="/login_page.php">
+<form autocomplete="on" method="get" action="/welcome.html">
   <div class="imgcontainer">
-    <img src="login-logo.png" alt="Avatar" class="avatar">
+    <img src="pictures/login-logo.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
 
     <input type="text" placeholder="Username" name="uname" required>
 	<br>
-
     <input type="password" placeholder="Password" name="psw" required>
     <br>
     <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
+    <input type="checkbox" class="remember" checked="checked"> Remember me
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <button type="button" class="cancelbtn">Forgot Password?</button>
+
   </div>
 </form>
 

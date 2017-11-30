@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/academics.css">
       <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>title</title>
   </head>
   <body>
-    <div id="headerimg">
+    <div class="header">
     <img src="pictures/header_blk_red.png">  
     </div>
   	<div class="topnavbar">
@@ -37,16 +39,33 @@
   				<a href="#" class="">Support</a>
       </div>
       
-      <div id="accontainer">
-        <div>
-         <p></p>
-
-        </div>
+      <div>
+          <h1>Class Registration</h1>
+      <form class="register">
+           <select id="semselect" onchange="semsel();">
+                <option value="semester">Choose semester</option>
+                <option value="current">Fall 2017</option>
+                <option value="next">Spring 2018</option>
+          </select>  
+      </form>
       
-      
-      
+     <form class="classlist">
+          <table class="classes">
+         <th>Class</th>
+         <th>Course #</th>      
+         <th>CRN</th>
+         <th>Description</th>
+         
+         </table>
+          
+          
+          </form>
       
       </div>
+      
+      
+      
+      
       
       <footer>Office of the Registrar | Phone: 312.567.3100 | Fax: 312.567.3313 | Email: registrar@iit.edu</footer>
 
