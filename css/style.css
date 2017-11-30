@@ -16,8 +16,16 @@ input {
 #accontainer {
  background-color: aliceblue;   
 }
-
-/* CSS for topnavbar and dropdowns*/
+h1 {
+   position:relative;
+    text-align: center;
+    margin-top: 25%;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    
+}
+/* CSS for topnavbar and dropdowns on desktop*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,12 +44,10 @@ li {
 }
 .topnavbar {
     overflow: hidden;
-    background-color: gray;
+    background-color: darkgray;
     font-family: Arial;
-
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
 }
 
 .topnavbar a {
@@ -125,6 +131,13 @@ label {
   
 }
 
+
+.register {
+ margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
 footer {
    position:fixed;
    opacity: 0.8;
@@ -146,26 +159,43 @@ footer {
     padding: 16px;
 }
 
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+.classes {
+    background-color: lightcoral;
+    color: black;
+    margin: auto;
+    text-align: center;
+    width: 80%;
     
 }
-form {
 
-    display: inline-block;
-    text-align: center;
-	font-family: 'Oswald', sans-serif;
+th {
+    border-right: 2px solid gray;
+    width: 2%;
 }
-    }
-button {
-	display: inline-block;
-    text-align: center;
-	font-family: 'Oswald', sans-serif;
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 600px) {
+  .topnavbar a:not(:first-child) {display: none;}
+  .topnavbar a.icon {
+    float: right;
+    display: block;
+  }
 }
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-	}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
 	
