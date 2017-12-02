@@ -1,3 +1,5 @@
+(() => {
+    
 window.onload = function() {
     $('.classes').hide();
 }
@@ -15,3 +17,5 @@ function navbarScale() {
         topbar.className = "topnav";
     }
 }
+
+})();
