@@ -18,4 +18,9 @@ function navbarScale() {
     }
 }
 
+function mobileChange() {
+    var mainNav = document.getElementsByClassName('topnavbar')
+    mainNav.isEnabled = false;
+}
+
 })();
