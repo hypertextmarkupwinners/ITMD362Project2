@@ -17,6 +17,20 @@ input {
  background-color: aliceblue;   
 }
 
+.register {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 60%;   
+}
+
+#semselect {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 40%;
+}
+
 h1 {
    position:relative;
     text-align: center;
@@ -26,7 +40,9 @@ h1 {
     border-top: solid 1px;
     
 }
+
 /* CSS for topnavbar and dropdowns on desktop*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,73 +52,6 @@ ul {
   
     position: fixed;
  
-}
-
-.topnavbar {
-    overflow: hidden;
-    background-color: darkgray;
-    font-family: Arial;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.topnavbar a {
-    float: left;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 14px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-}
-
-.topnavbar a:hover, .dropdown:hover .dropbtn {
-    background-color:red;
-    transition-duration: 0.2s;
-}
-
-.topnavbar .icon {
-  display: none;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-    
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 button {
@@ -174,8 +123,6 @@ th {
 }
 
 
-/*mobile nav*/
-@media screen and (max-width: 600px) {
 
 a
 {
@@ -187,7 +134,7 @@ a
 
 a:hover
 {
-  color: tomato;
+  color: red;
 }    
 
 #menuToggle
@@ -214,15 +161,12 @@ a:hover
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; 
+  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
 
-.topnavbar {
-        visibility: hidden;
-    }
 #menuToggle span
 {
   display: block;
@@ -292,8 +236,8 @@ a:hover
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
+    padding-bottom: 100%;
   padding-top: 125px;
-  
   background: #ededed;
   list-style-type: none;
   
@@ -317,5 +261,5 @@ a:hover
   transform: none;
 }
     
-}
+
 	
