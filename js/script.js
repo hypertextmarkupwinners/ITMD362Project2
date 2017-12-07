@@ -7,3 +7,6 @@ function semsel(value) {
     $('.classes').show();
 }
 
+function addCourse() {
+    alert("Class successfully added");
+}
