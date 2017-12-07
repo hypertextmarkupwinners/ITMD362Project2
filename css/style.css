@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 #headimg {
   margin: auto;
     padding-left: 8%;
@@ -47,8 +51,11 @@ button {
 #contentfill {
     text-align: center;
     align-content: center;
-    margin-top: 10%;
+    transform: scale(1.5);
      width: 100%;
+    margin-top: 16%;
+    
+    
 }
 
 .register {
@@ -75,19 +82,11 @@ button {
     
 }
 
-/* CSS for topnavbar and dropdowns on desktop*/
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-  
-    position: fixed;
- 
+
+.academenu li {
+    padding: 10px;
 }
-
 button {
    vertical-align: baseline;
     align-content: center;
@@ -314,19 +313,21 @@ a:hover
 }
 
 @media screen and (max-width: 300px) {
+    
+    #contentfill {
+        margin-top: 10%;
+        transform: scale(1.2);
+        overflow: hidden;
+            
+    }
+    
     #headerimg {
-        zoom: 1.5;
+        zoom: 0.6
     }
     #menuToggle {
        left: 5px; 
     }
     
-    #contentimagedesk {
-       background-image:url(/pictures/welcomefillermobile.jpg);
-    }
-     #contentimagem {
-       background-image:url(/pictures/welcomefillermobile.jpg);
-    }
     body {
         font-size-adjust: 2em;
     }
@@ -341,11 +342,5 @@ a:hover
     }
 }
 
-@media screen and (max-width: 900px) {
-    #contentfill {
-        
-    }  
-    
-}
 
 	
