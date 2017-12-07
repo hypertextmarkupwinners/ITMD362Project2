@@ -5,10 +5,29 @@
 }
 
 .toptext {
+    max-width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
+
+#acdiv1 {
+    margin-top: 5%;
+padding: 50px;
+    width: 15%;
+    height: 200px;
+    background-color: gray;
+}
+
+#acdiv2 {
+    float: left;
+ margin-top: 5%;
+padding: 50px;
+    width: 15%;
+    height: 200px;
+    background-color: gray;   
+}
+
 
 input {
     margin-bottom: 15px;
@@ -26,8 +45,10 @@ button {
 }
 
 #contentfill {
+    text-align: center;
+    align-content: center;
     margin-top: 10%;
-    max-width: 100%;
+     width: 100%;
 }
 
 .register {
@@ -44,7 +65,7 @@ button {
     width: 40%;
 }
 
-h1 {
+.regtext {
    position:relative;
     text-align: center;
     margin-top: 25%;
@@ -61,7 +82,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    
   
     position: fixed;
  
@@ -143,8 +164,13 @@ footer {
     color: white;
 }
 .classes td {
+    padding-top: 10px;
    border-bottom: black;
+    padding-bottom: 10px;
     border-bottom: 1px solid black;
+}
+.classes tr {
+    
 }
 
 /*Navigation*/
@@ -167,9 +193,11 @@ a:hover
   color: red;  
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
-  
+  margin: 5px;
+  padding: 5px;
+  top: 2%;
+  left: 30px;
+
   z-index: 1;
   
   -webkit-user-select: none;
@@ -256,11 +284,9 @@ a:hover
  */
 #menu
 {
-  
-  visibility: visible;
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -120px 0 0 -50px;
   padding: 50px;
     padding-bottom: 100%;
   padding-top: 125px;
@@ -287,16 +313,37 @@ a:hover
   transform: none;
 }
 
-@media screen and (max-width: 400px) {
-    #contentfill {
-       background: url(/pictures/welcomefillermobile-1.jpg);
+@media screen and (max-width: 300px) {
+    #headerimg {
+        zoom: 1.5;
+    }
+    #menuToggle {
+       left: 5px; 
     }
     
+    #contentimagedesk {
+       background-image:url(/pictures/welcomefillermobile.jpg);
+    }
+     #contentimagem {
+       background-image:url(/pictures/welcomefillermobile.jpg);
+    }
+    body {
+        font-size-adjust: 2em;
+    }
+    .classes {
+        font-size: 11px;
+    }
+    .classlist {
+        font-size: 11px;
+    }
+    #semselect {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 900px) {
     #contentfill {
-        zoom: 0.8;
+        
     }  
     
 }

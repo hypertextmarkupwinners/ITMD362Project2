@@ -8,5 +8,5 @@ function semsel(value) {
 }
 
 function addCourse() {
-    alert("Class successfully added");
+    alert("Course successfully added");
 }
