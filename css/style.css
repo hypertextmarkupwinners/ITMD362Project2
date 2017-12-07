@@ -17,6 +17,20 @@ input {
  background-color: aliceblue;   
 }
 
+.register {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 60%;   
+}
+
+#semselect {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 40%;
+}
+
 h1 {
    position:relative;
     text-align: center;
@@ -26,7 +40,9 @@ h1 {
     border-top: solid 1px;
     
 }
+
 /* CSS for topnavbar and dropdowns on desktop*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -174,8 +190,6 @@ th {
 }
 
 
-/*mobile nav*/
-@media screen and (max-width: 600px) {
 
 a
 {
@@ -317,5 +331,5 @@ a:hover
   transform: none;
 }
     
-}
+
 	
