@@ -15,7 +15,8 @@
     </div>
       
       
-<nav role="navigation">
+<nav>
+         
   <div id="menuToggle">
       
     <input type="checkbox" />
@@ -25,30 +26,31 @@
     <span></span>
     
     <ul id="menu">  
-      <a href="/welcome.html"><li>Welcome</li></a>
-      <a href="/academics.html"><li>Academics</li></a>
-      <a href="#"><li>Student Life</li></a>
-      <a href="#"><li>Finance</li></a>
-      <a href="#"><li>Athletics</li></a>
-      <a href="#"><li>Library</li></a>
-      <a href="#"><li>Research</li></a>
-      <a href="#"><li>My Stuff</li></a>
-      <a href="#"><li>Support</li></a>
+      <li><a href="/welcome.html">Welcome</a></li>
+       <li><a href="/academics.html">Academics</a></li>
+      <li><a href="#">Student Life</a></li>
+      <li><a href="#">Finance</a></li>    
+      <li><a href="#">Athletics</a></li>
+      <li><a href="#">Library</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">My Stuff</a></li>
+      <li><a href="#">Support</a></li>
     </ul>
   </div>
-    <a><h1 class="toptext">Registration</h1></a> 
 </nav>
+    <a><h1 class="toptext">Registration</h1></a> 
+
       
       <div class="register">
           <h1>Class Registration</h1>
           <p>Select semester and subject:</p><br>
       <form>
-           <select id="semselect">
+           <select class="semselect">
                 <option value="semester">Choose semester</option>
                 <option value="current">Fall 2017</option>
                 <option value="next">Spring 2018</option>
           </select>  
-          <select id="semselect" onchange="semsel();">
+          <select class="semselect" onchange="semsel();">
                 <option value="semester">Subject</option>
                 <option value="itmd">ITM Development</option>
                 <option value="itmm">ITM Management</option>
