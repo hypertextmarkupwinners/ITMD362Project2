@@ -1,20 +1,31 @@
 #headimg {
   margin: auto;
-    padding-left: 8%;   
+    padding-left: 8%;
+    width: 100%;
+}
+
+.toptext {
+    text-align: left;
 }
 
 input {
     margin-bottom: 15px;
 }
 
+button {
+    margin-top: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    color: white;
+    text-decoration: none;
 
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
 }
 
-#accontainer {
- background-color: aliceblue;   
+#contentfill {
+    margin-top: 10%;
+    max-width: 100%;
 }
 
 .register {
@@ -88,8 +99,10 @@ label {
 }
 
 footer {
+    text-align: center;
    position:fixed;
    opacity: 0.8;
+   
    left:0px;
    bottom:0px;
    height:30px;
@@ -109,20 +122,30 @@ footer {
 }
 
 .classes {
-    background-color: lightcoral;
+    background-color: white;
+    border-bottom: 1px solid black;
     color: black;
     margin: auto;
     text-align: center;
     width: 80%;
+    padding-top: 5px;
     
 }
 
-th {
+.classes th {
     border-right: 2px solid gray;
     width: 2%;
+    padding: 5px;
+    margin-bottom: 5%;
+    background-color: darkgray;
+    color: white;
+}
+.classes td {
+   border-bottom: black;
+    border-bottom: 1px solid black;
 }
 
-
+/*Navigation*/
 
 a
 {
@@ -139,6 +162,7 @@ a:hover
 
 #menuToggle
 {
+  color: red;  
   display: block;
   position: relative;
   top: 50px;
@@ -163,12 +187,11 @@ a:hover
   
   opacity: 0; 
   z-index: 2; 
-  
-  -webkit-touch-callout: none;
 }
 
 #menuToggle span
 {
+  background-color: black;
   display: block;
   width: 33px;
   height: 4px;
@@ -231,6 +254,7 @@ a:hover
  */
 #menu
 {
+  
   visibility: visible;
   position: absolute;
   width: 300px;
@@ -260,6 +284,19 @@ a:hover
 {
   transform: none;
 }
+
+@media screen and (max-width: 400px) {
+    #contentfill {
+       background: url(/pictures/welcomefillermobile-1.jpg);
+    }
     
+}
+
+@media screen and (max-width: 900px) {
+    #contentfill {
+        zoom: 0.8;
+    }  
+    
+}
 
 	

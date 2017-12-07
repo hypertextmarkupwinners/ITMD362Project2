@@ -5,48 +5,52 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
     <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <title>title</title>
   </head>
   <body>
     <div class="header">
     <img src="pictures/header_blk_red.png" alt="header image">  
     </div>
-  	<div class="topnavbar">
-  			
-  		   <a href="/welcome.html" class="">Welcome</a>
-           <div class="dropdown">
-            <button class="dropbtn active">Academics</button>
-            <div class="dropdown-content">
-                <a href="#">Admission</a>
-              <a href="/registration.html">Registration</a>
-              <a href="#">Academic Profile</a>
-              <a href="#">Grades</a>
-            </div>
-          </div>
-  				<a href="#" class="">Student Life</a>
-  		
-  				<a href="#" class="">Finances</a>
-  			
-  				<a href="#" class="">Athletics</a>
-  			
-  				<a href="#" class="">Library</a>
-  			
-  				<a href="#" class="">Research</a>
-  			
-  				<a href="#" class="">My Stuff</a>
-  			
-  				<a href="#" class="">Support</a>
-      </div>
+<nav role="navigation">
+  <div id="menuToggle">
+      
+    <input type="checkbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">  
+      <a href="/welcome.html"><li>Welcome</li></a>
+      <a href="/academics.html"><li>Academics</li></a>
+      <a href="#"><li>Student Life</li></a>
+      <a href="#"><li>Finance</li></a>
+      <a href="#"><li>Athletics</li></a>
+      <a href="#"><li>Library</li></a>
+      <a href="#"><li>Research</li></a>
+      <a href="#"><li>My Stuff</li></a>
+      <a href="#"><li>Support</li></a>
+    </ul>
+  </div>
+   
+</nav>
       
       <div class="register">
           <h1>Class Registration</h1>
+          <p>Select semester and subject:</p><br>
       <form>
-           <select id="semselect" onchange="semsel();">
+           <select id="semselect">
                 <option value="semester">Choose semester</option>
                 <option value="current">Fall 2017</option>
                 <option value="next">Spring 2018</option>
           </select>  
+          <select id="semselect" onchange="semsel();">
+                <option value="semester">Subject</option>
+                <option value="itmd">ITM Development</option>
+                <option value="itmm">ITM Management</option>
+          </select> 
       </form>
       </div>
       
@@ -57,15 +61,84 @@
          <th>Class</th>
          <th>Course #</th>      
          <th>CRN</th>
-         <th>Description</th>
+         <th>Add Course</th>
         </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+               <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
+              <tr>
+                  <td>Fund of Web Development</td>
+                  <td>361</td>
+                  <td>28529</td>
+                  <td><button class="addBtn" onclick="addCourse();">Add</button></td>
+              </tr>
      
          </table>
-          
-          
+                
           </form>
-      
-      </div>
       
       
       
