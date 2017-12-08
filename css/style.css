@@ -14,24 +14,27 @@ body {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
-
+/*Content for navigating to registration page*/
 #acdiv1 {
     margin-top: 5%;
-padding: 50px;
-    width: 15%;
+padding-top: 6%;
+    width: 80%;
+    align-self: center;
+    text-align: center;
     height: 200px;
-    background-color: gray;
+ 
+    border: solid 1px red;
+    margin-left: 10%;
+    margin-right: 20%;
 }
 
-#acdiv2 {
-    float: left;
- margin-top: 5%;
-padding: 50px;
-    width: 15%;
-    height: 200px;
-    background-color: gray;   
+
+.academenu li {
+    padding: 10px;
+    font-size: 2em;
 }
 
+/* */
 
 input {
     margin-bottom: 15px;
@@ -84,9 +87,6 @@ button {
 
 
 
-.academenu li {
-    padding: 10px;
-}
 button {
    vertical-align: baseline;
     align-content: center;
