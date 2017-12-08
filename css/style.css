@@ -196,11 +196,7 @@ a:hover
   padding: 5px;
   top: 2%;
   left: 30px;
-
   z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 #menuToggle input
@@ -326,15 +322,12 @@ a:hover
      font-size: 1.5em;   
     }
     
-    #headerimg {
-        zoom: 0.6
-    }
     #menuToggle {
        left: 5px; 
     }
     
     body {
-        font-size-adjust: 2em;
+        font-size: 2em;
     }
     .classes {
         font-size: 11px;
