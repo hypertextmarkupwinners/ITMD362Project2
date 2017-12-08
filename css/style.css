@@ -321,6 +321,11 @@ a:hover
             
     }
     
+    .academenu li {
+     padding-top: 20px;
+     font-size: 1.5em;   
+    }
+    
     #headerimg {
         zoom: 0.6
     }
